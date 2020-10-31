@@ -1,74 +1,98 @@
-html{
-   background-image: url(https://live.staticflickr.com/65535/50544467228_c15010c6e7_m.jpg);
-    height: 100vw;
-    background-repeat:   no-repeat;
-    background-position: center;
-  background-attachment: fixed;
-  background-blend-mode: multiply;
-  background-size: 100vw;
-   background-color: rgba(136,136,136,0.9);
-  max-width: 100vw;
-  min-width: 50vw;
-}
-@media(max-width: 650px){
-  html{
-   background-image: url(https://live.staticflickr.com/65535/50544467228_c15010c6e7_m.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100vw;
-  }
-}
 body{
   display: flex;
   flex-direction: row;
-  color: white;
+  color: black;
   padding: 0%;
   margin: 0%;
 }
 #navbar{
   display: flex;
   flex-direction: column;
-  max-width: 30vw;
-  background-color: rgb(104,104,104);
+  width: 25vw;
+  background-color: #BEBEBE;
   height: auto;
+  position: fixed;
+}
+#main-doc{
+  display: flex;
+  flex-direction: column;
+  background-color: #DCDCDC;
+  margin-left: 25vw;
 }
 @media(max-width: 650px){
-  #navbar > body{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+ #navbar{
+    width: 100vw;
+    margin-top: 0%;
+   height: 30%;
+   padding: 0%;
+   overflow-y: auto;
+  }
+  #main-doc{
+    margin-left: 1%;
+    margin-top: 50%;
   }
 }
 @media(max-width: 650px){
   body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 }
+
+@media(max-width: 650px){
+  a{
+    font-size: 12px;
+    margin: 0%;
+  }
+  li > ul{
+    margin: 0%;
+  }
+  hr{
+    margin: 0%;
+  }
+}
 li{
-  margin-top: 25px;
   text-decoration: none;
   list-style-type: none;
 }
 a{
   text-decoration: none;
   list-style-type: none;
-  color: white;
+  color: black;
 }
 .main-title{
-  font-size: 28px;
+  font-size: 25px;
   padding: 20px;
 }
 .secondary-title{
-  font-size: 28px;
+  font-size: 22px;
   margin-left: 20px;
 }
 p{
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 30px;
 }
 code{
-  margin: 10px;
+  display: block;
+  margin-left: 50px;
+  padding: 5px;
+  background-color: #BEBEBE;
+  max-width: 40vw;
+}
+@media(max-width: 650px){
+  .main-title{
+    font-size: 18px;
+    margin: 1%;
+    padding: 2%;
+  }
+  .secondary-title{
+    font-size: 15px;
+  }
+  p{
+    font-size: 10px;
+  }
+  code{
+    font-size: 10px;
+  }
 }
